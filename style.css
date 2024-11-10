@@ -1,5 +1,6 @@
 body{
     background-color:rgb(53, 53, 53);
+    background-image: url(background.jpg);
 }
 
 
@@ -186,3 +187,21 @@ body{
     color: white;
     border-color: white;
 }
+
+.rem_underline {
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#letters{
+    position: fixed;
+    top: 30%;
+    right: 10px;
+    max-width: 450px;
+}
+#letters button{
+    margin: 3px;
+    height: 30px;
+}
+
+

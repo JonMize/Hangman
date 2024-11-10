@@ -8,5 +8,18 @@
 </head>
 <body>
 <a href = 'homePage.php'><div class="home-button">Home</div></a>
+
+<div id="letters">
+<form method="POST">
+    <?php
+    foreach (range('A', 'Z') as $letter) {
+        echo "<button type='submit' name='guess' value='$letter'>$letter</button> ";
+    }
+    ?>
+</form>
+</div>
+
+
+
 </body>
 </html>
