@@ -269,3 +269,15 @@ body {
     background-color: blue;
     color: white;
 }
+
+.buttons{
+  display: flex;
+  gap: 75px;
+  margin-top: 50px;
+
+  
+}
+.buttons .homepage-button{
+    width: 200px;
+    
+}

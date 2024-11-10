@@ -87,5 +87,12 @@ $image_path = "images/$image_number.jpg";
     </form>
 </div>
 
+<div class="buttons">
+<a class="rem_underline" href="homePage.php"><div class="homepage-button">Home</div></a>
+<a class="rem_underline" href="statPage.php"><div class="homepage-button">Stats</div></a>
+
+</div>
+
+
 </body>
 </html>
