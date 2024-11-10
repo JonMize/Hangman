@@ -1,3 +1,8 @@
+body{
+    background-color:rgb(53, 53, 53);
+}
+
+
 .home-button {
     width: 120px;
     height: 70px;
@@ -124,7 +129,60 @@
     margin-bottom: 2vh; 
 }
 
+.difficulty-container {
+    top:10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
-.stat:last-child {
-    margin-bottom: 0;
+.difficulty-button {
+    background-color: white;
+    width: 25vw;
+    height: 14vh; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 3vh; 
+    transition: all 0.3s ease; 
+}
+
+.easy {
+    border: 8px solid green;
+    color: green;
+}
+
+.easy:hover {
+    background-color: green;
+    color: white;
+    border-color: white;
+}
+
+.medium {
+    border: 8px solid yellow;
+    color: yellow;
+}
+
+.medium:hover {
+    background-color: yellow;
+    color: black;
+    border-color: white;
+}
+
+.hard {
+    border: 8px solid red;
+    color: red;
+}
+
+.hard:hover {
+    background-color: red;
+    color: white;
+    border-color: white;
 }
