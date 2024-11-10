@@ -41,10 +41,10 @@ if (isset($_POST['guess'])) {
     }
 }
 
-// Check for game end and redirect to statPage.php
+// Check for game end and redirect to gameStatus.php
 if ($_SESSION['attempts'] <= 0 || strpos($_SESSION['display_word'], '-') === false) {
     $result = ($_SESSION['attempts'] <= 0) ? 'lost' : 'won';
-    header("Location: statPage.php?result=$result");
+    header("Location: gameStatus.php?result=$result");
     exit();
 }
 
@@ -89,7 +89,7 @@ $image_path = "images/$image_number.jpg";
 
 <div class="buttons">
 <a class="rem_underline" href="homePage.php"><div class="homepage-button">Home</div></a>
-<a class="rem_underline" href="statPage.php"><div class="homepage-button">Stats</div></a>
+<a class="rem_underline" href="statsPage.php"><div class="homepage-button">Stats</div></a>
 
 </div>
 
