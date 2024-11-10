@@ -7,6 +7,6 @@
     <title>Hangman</title>
 </head>
 <body>
-<div class="home-button"><a href = 'homePage.php'>Home</a></div>
+<a href = 'homePage.php'><div class="home-button">Home</div></a>
 </body>
 </html>
