@@ -22,12 +22,12 @@ if (isset($_POST['play_again'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Game Stats</title>
+    <title>Game Status</title>
 </head>
 <body>
 
 <div class="stats-title-container">
-    <div class="stats-title">Game Stats</div>
+    <div class="stats-title">Game Status</div>
 </div>
 
 <div class="stats-container">
