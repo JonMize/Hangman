@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+
 // Check game result from URL
 $result = isset($_GET['result']) ? $_GET['result'] : '';
 $difficulty = $_SESSION['Difficulty'] ?? 'easy';
@@ -26,7 +27,6 @@ if ($result === 'won') {
 
 
 
-
 // Clear session data to reset the game
 if (isset($_POST['play_again'])) {
     session_unset();
@@ -43,6 +43,7 @@ if (isset($_POST['play_again'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Game Status</title>
+    
 </head>
 <body>
 
@@ -58,7 +59,11 @@ if (isset($_POST['play_again'])) {
     <form method="POST">
         <button type="submit" name="play_again" class="play-again-button">Play Again</button>
     </form>
+    <a class="rem_underline" href="statsPage.php"><div class="homepage-button">Stats</div></a>
+
 </div>
+
+
 
 </body>
 </html>

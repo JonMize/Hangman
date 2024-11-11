@@ -290,5 +290,11 @@ body {
 
 #stats_home{
     position: relative;
-    top: 350px;
+    top: 275px;
+}
+.stats-container .homepage-button{
+    
+    width: 8vw;
+    height: 8vh;
+    margin-top: 10px;
 }
