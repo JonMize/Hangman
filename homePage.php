@@ -7,6 +7,10 @@
     <title>Homepage</title>
 </head>
 <body>
+<?php
+session_start();
+
+?>
     <div class="homepage-title-container">
         <div class="homepage-title">GSU HangMan</div>
     </div>
@@ -18,12 +22,15 @@
     
 
     <?php
-session_start();
+
 
 if (!isset($_SESSION['games_played'])) {
     $_SESSION['games_played'] = 0;
     $_SESSION['games_won'] = 0;
     $_SESSION['games_lost'] = 0;
+    $_SESSION['easy_wins'] = 0;
+    $_SESSION['medium_wins'] = 0;
+    $_SESSION['hard_wins'] = 0;
 }
 ?>
 

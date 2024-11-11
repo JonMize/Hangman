@@ -3,9 +3,29 @@ session_start();
 
 // Check game result from URL
 $result = isset($_GET['result']) ? $_GET['result'] : '';
+$difficulty = $_SESSION['Difficulty'] ?? 'easy';
+
 
 // Display message based on the result
 $message = ($result === 'won') ? "Congratulations! You've won the game!" : "Game Over! Better luck next time.";
+
+$_SESSION['games_played']++;
+if ($result === 'won') {
+    $_SESSION['games_won']++;
+    if ($difficulty === 'easy') {
+        $_SESSION['easy_wins']++;
+    } elseif ($difficulty === 'medium') {
+        $_SESSION['medium_wins']++;
+    } elseif ($difficulty === 'hard') {
+        $_SESSION['hard_wins']++;
+    }
+} else {
+    $_SESSION['games_lost']++;
+    $_SESSION['games_played']++;
+    }
+
+
+
 
 // Clear session data to reset the game
 if (isset($_POST['play_again'])) {

@@ -281,3 +281,14 @@ body {
     width: 200px;
     
 }
+
+#statsPage{
+    position: relative;
+    top: 250px;
+    color: blue;
+}
+
+#stats_home{
+    position: relative;
+    top: 350px;
+}
