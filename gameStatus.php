@@ -11,7 +11,7 @@ $message = ($result === 'won') ? "Congratulations! You've won the game!" : "Game
 if (isset($_POST['play_again'])) {
     session_unset();
     session_destroy();
-    header("Location: gamePage.php"); // Redirect to start a new game
+    header("Location: difficulty.html"); // Redirect to start a new game
     exit();
 }
 ?>
