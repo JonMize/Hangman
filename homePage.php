@@ -17,7 +17,9 @@ session_start();
     <div class="homepage-buttons-container">
         <a class="rem_underline" href="difficulty.html"><div class="homepage-button">Play</div></a>
         <a class="rem_underline" href="statsPage.php"><div class="homepage-button">Stats</div></a>
-        <div class="homepage-button">Reset Stats</div>
+        <form method="POST" action="homePage.php">
+        <button type="submit" name="reset_stats" class="homepage-button">Reset Stats</button>
+        </form>
     </div>
     
 
@@ -32,7 +34,20 @@ if (!isset($_SESSION['games_played'])) {
     $_SESSION['medium_wins'] = 0;
     $_SESSION['hard_wins'] = 0;
 }
+
+if (isset($_POST['reset_stats'])) {
+    $_SESSION['games_played'] = 0;
+    $_SESSION['games_won'] = 0;
+    $_SESSION['games_lost'] = 0;
+    $_SESSION['easy_wins'] = 0;
+    $_SESSION['medium_wins'] = 0;
+    $_SESSION['hard_wins'] = 0;
+
+}
+
+
 ?>
+
 
 </body>
 </html>
