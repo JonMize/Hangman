@@ -11,8 +11,7 @@
         <div class="homepage-title">GSU HangMan</div>
     </div>
     <div class="homepage-buttons-container">
-        <a class="rem_underline" href="gamePage.php"><div class="homepage-button">Play</div></a>
-        <a class="rem_underline" href="difficulty.html"><div class="homepage-button">Difficulty</div></a>
+        <a class="rem_underline" href="difficulty.html"><div class="homepage-button">Play</div></a>
         <a class="rem_underline" href="statsPage.php"><div class="homepage-button">Stats</div></a>
         <div class="homepage-button">Reset Stats</div>
     </div>
