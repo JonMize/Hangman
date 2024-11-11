@@ -15,10 +15,10 @@ function loadWord($difficulty) {
 }
 
 if (!isset($_SESSION['hidden_word'])) {
-    $difficulty = $_GET['Difficulty'];
+    $difficulty = $_GET['Difficulty'] ?? 'easy';
     $_SESSION['hidden_word'] = loadWord($difficulty);
     $word = $_SESSION['hidden_word'];
-    $_SESSION['display_word'] = str_repeat('-', strlen($word)); // Hide all letters
+    $_SESSION['display_word'] = substr($word, 0, 1) . str_repeat('-', strlen($word) - 2) . substr($word, -1); // Reveal first and last letters
     $_SESSION['attempts'] = 7; // Set attempts to match the number of images (0.jpg to 6.jpg)
     $_SESSION['guessed_letters'] = [];
 }
